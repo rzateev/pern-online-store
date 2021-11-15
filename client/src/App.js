@@ -8,7 +8,6 @@ function App() {
   return (
     <BrowserRouter>
         <NavBar />
-        <Auth/>
         <AppRouter>
          </AppRouter>
     </BrowserRouter>
