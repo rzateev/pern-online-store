@@ -1,0 +1,16 @@
+npm init -y
+npm install express pg pg-hstore sequelize cors dotenv
+npm install -D nodemon
+npm install express-fileupload
+npm install uuid
+npm install jsonwebtoken bcrypt
+
+ npx create-react-app
+npm i axios react-router-dom mobx mobx-react-lite
+
+
+react bootstrap
+npm install react-bootstrap bootstrap
+
+https://react-bootstrap.github.io/components/navbar/
+Используем компонент bootstrap nav bar
