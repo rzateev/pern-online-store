@@ -3,13 +3,14 @@ import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom
 import {authRoutes, publicRoutes} from "../routes";
 import {SHOP_ROUTE} from "../Utils/consts";
 import {Context} from "../index";
+import {observer} from "mobx-react-lite";
 
-const AppRouter = () => {
+const AppRouter = observer(() => {
     const {user} = useContext(Context)
     const isAuth = true
     console.log(user)
     return (
-        <Router>
+        // <Router>
         <Switch>
             {isAuth && authRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} component={Component} exact/>
@@ -20,8 +21,8 @@ const AppRouter = () => {
             )}
             <Redirect to={SHOP_ROUTE}/>
         </Switch>
-        </Router>
+        // </Router>
     );
-};
+});
 
 export default AppRouter;

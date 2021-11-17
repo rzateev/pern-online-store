@@ -14,3 +14,10 @@ npm install react-bootstrap bootstrap
 
 https://react-bootstrap.github.io/components/navbar/
 Используем компонент bootstrap nav bar
+
+npm install dotenv --save
+
+npm install jwt-decode
+npm install history@4.10.1
+
+onClick={()=>history.push(DEVICE_ROUTE + '/' + device.id)}

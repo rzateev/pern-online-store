@@ -1,7 +1,7 @@
 import React, {useContext, useState} from 'react';
 import {Button, Col, Dropdown, Form, Modal, Row} from "react-bootstrap";
 import {Context} from "../../index";
-import DropdownToggle from "react-bootstrap/DropdownToggle";
+
 
 const CreateDevice = ({show, onHide}) => {
     const {device} = useContext(Context)
